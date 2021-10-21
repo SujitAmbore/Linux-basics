@@ -2,20 +2,40 @@
 
 Summary: 
 
-- In this chapter I am going to show you very basic linux commands which when used in combination can help to achieve desired results.
+- In this chapter I am going to discuss some of the very basic linux commands which when used in combination can help to achieve desired results.
 
 
-Syntax: ls 
-Usage: LIST is used to view content inside a folder.
 
 Syntax: pwd
 Usage: Present Working Directory is used to know which folder the user is currently in.
 
-Syntax: cd foldername
-Usage:
+------------------------------------------------------------------------------------------------------------------------------------------
+Syntax: cd [foldername]
+Usage: Change Directory is used to change current working directory
 
+Example:
+amboresujitgopal@machine ~ % cd Documents
+amboresujitgopal@machine Documents % 
+
+------------------------------------------------------------------------------------------------------------------------------------------
 Syntax: cd .. 
 Usage:
+
+------------------------------------------------------------------------------------------------------------------------------------------
+Syntax: ls 
+Purpose: LIST is used to view content inside a folder.
+
+Example:
+username@machine Desktop % ls
+Applications
+File1.txt
+Library
+Public
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 
 Syntax: touch filename.txt 
 Usage: - to create a file with filename
