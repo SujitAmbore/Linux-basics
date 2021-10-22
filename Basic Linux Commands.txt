@@ -1,0 +1,100 @@
+
+Summary: 
+
+- In this chapter I am going to discuss some of the very basic linux commands which when used in combination can help to achieve desired results.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Command: pwd
+Usage: Present Working Directory is used to know which folder the user is currently in.
+
+Example:
+amboresujitgopal@machine ~ % pwd
+/Users/username/Documents
+
+------------------------------------------------------------------------------------------------------------------------------------------
+Command: cd 
+Usage: Change Directory is used to change current working directory
+
+Example:
+amboresujitgopal@machine ~ % cd Documents
+amboresujitgopal@machine Documents % 
+
+------------------------------------------------------------------------------------------------------------------------------------------
+Command: cd .. 
+Usage: This command enables user to go back into the previous directory
+
+------------------------------------------------------------------------------------------------------------------------------------------
+Command: ls 
+Purpose: LIST is used to view content inside a folder.
+
+Example:
+username@machine Desktop % ls
+Applications
+File1.txt
+Library
+Public
+
+------------------------------------------------------------------------------------------------------------------------------------------
+Command: whoami
+Purpose: This command lets user name their username
+
+Example:
+username@machine Desktop % ls
+username
+
+------------------------------------------------------------------------------------------------------------------------------------------
+Command: clear
+Purpose: To clear out content inside the terminal/console
+
+Example:
+username@machine Desktop % clear
+
+------------------------------------------------------------------------------------------------------------------------------------------
+Creating, Reading and Removing Files on Linux
+------------------------------------------------------------------------------------------------------------------------------------------
+Command: touch 
+Purpose: - It is used to create a file without any content. The file created using touch command is empty. This command can be used when 
+the user doesn’t have data to store at the time of file creation
+
+Example:
+username@machine Desktop % touch filename.txt 
+
+Output: filename.txt will get created with empty content inside the file.
+----------------------------------------------------------------------------------------------
+
+Command: cat
+Purpose: It is used to create the file with content also we can use cat command to view the contents of the file
+
+Example: below example shows how to create a file and enter contents
+username@machine Desktop % cat > newfile.txt
+Hello World!
+
+Output: newfile.txt will get created with "Hello World!" as content inside the file
+----------------------------------------------------------------------------------------------
+
+Command: rm
+Purpose: REMOVE command is used to remove a file inside folder/directory
+
+Example: 
+username@machine Desktop % rm file1.txt
+
+Output: file1.txt will be removed from the Desktop
+
+------------------------------------------------------------------------------------------------------------------------------------------
+Command: vi
+Usage: vi is a screen-oriented text editor to edit files
+
+
+
+
+Command: rm filename
+Usage: rm(REMOVE) command is used to remove a file inside folder/directory
+
+
+Command: cp Src_file Dest_file 
+Usage: cp(Copy) command is used to copy files or group of files or directory. It creates an exact image of a file on a disk with different file name. cp command require at least two filenames in its arguments.
+
+
+Command: sudo
+Usage: sudo (Super User DO) command in Linux is generally used as a prefix of some command that only superuser are allowed to run. If you prefix “sudo” with any command, it will run that command with elevated privileges
