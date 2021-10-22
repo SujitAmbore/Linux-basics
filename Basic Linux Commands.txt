@@ -71,6 +71,13 @@ username@machine Desktop % cat > newfile.txt
 Hello World!
 
 Output: newfile.txt will get created with "Hello World!" as content inside the file
+
+
+Cat can also be used to copy contents of 1 file to another file
+
+Command: $cat filename-whose-contents-is-to-be-copied.txt > destination-filename.txt
+Output: destination-filename.txt will have the same content as filename-whose-contents-is-to-be-copied.txt
+
 ----------------------------------------------------------------------------------------------
 
 Command: rm
@@ -80,21 +87,18 @@ Example:
 username@machine Desktop % rm file1.txt
 
 Output: file1.txt will be removed from the Desktop
+----------------------------------------------------------------------------------------------
 
+Command: cp Src_file.txt Dest_file.txt
+Purpose: Copy command is used to copy files or group of files or directory. It creates an exact image of a file on a disk with different file name. cp command require at least two filenames in its arguments.
+
+Example:
+username@machine Desktop % cp file1.txt file2.txt
 ------------------------------------------------------------------------------------------------------------------------------------------
-Command: vi
-Usage: vi is a screen-oriented text editor to edit files
 
 
 
 
-Command: rm filename
-Usage: rm(REMOVE) command is used to remove a file inside folder/directory
 
 
-Command: cp Src_file Dest_file 
-Usage: cp(Copy) command is used to copy files or group of files or directory. It creates an exact image of a file on a disk with different file name. cp command require at least two filenames in its arguments.
 
-
-Command: sudo
-Usage: sudo (Super User DO) command in Linux is generally used as a prefix of some command that only superuser are allowed to run. If you prefix “sudo” with any command, it will run that command with elevated privileges
