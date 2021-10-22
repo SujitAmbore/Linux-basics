@@ -1,23 +1,47 @@
 Summary:
-In this section, I will discuss some of permission which are used when accessing sensitve files in Linux.
+In this section, I will discuss some of the commands which are related to permission managment in Linux, These commands helps a user to define access-control to files.
+
+Command: ls -l
+Purpose: To see all the permissions to different files, above command will lists the files in the working directory in long format.
+
+Example: username@machine Documents % ls -l
+total 2
+-rw-r--r--@  1 username  staff      0 Oct 22 11:32 file1.txt
+drwxr-xr-x   6 username  staff    192 Aug  3 14:46 Folder
+
+Output:
 
 
-Command:
-Purpose
+Command: chmod
+Purpose: Chnage Mode command is used to change the access mode of a file.
+
+The references are used to distinguish the users to whom the permissions apply i.e. they are list of letters that specifies whom to give permissions. The references are represented by one or more of the following letters:
+
+Reference   Class     Description
+u          owner      file's owner
+
+g          group      users who are members of
+                      the file's group
+
+o          others     users who are neither the
+                      file's owner nor members of 
+                      the file's group
+
+a          all       All three of the above, same as ugo
 
 Example:
 Output:
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Command:
-Purpose
+Purpose:
 
 Example:
 Output:
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Command:
-Purpose
+Purpose:
 
 Example:
 Output:
