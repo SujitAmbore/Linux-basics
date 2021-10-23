@@ -54,3 +54,20 @@ COMMAND: chmod u=rw EXAM
 AFTER: drw-rwxr-x   mik  mik    EXAM
 
 After applying the chmod u=rw EXAM command, the user (owner) cannot change the directory. If the user tries to change the directory, then it shows the message “Permission denied”
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command: sudo
+Purpose: Sudo stands for SuperUser DO and is used to access restricted files and operations. The sudo command temporarily elevates privileges allowing users to complete sensitive tasks without logging in as the root user.
+
+Example: 
+
+sudo -u [different_username] whoami
+
+Output:
+Before: whoami
+Output: sujit
+After: sudo -u root whoami
+Output: root
+
+
