@@ -1,28 +1,36 @@
 
 Summary: 
 
-- In this chapter I am going to discuss some of the very basic linux commands which when used in combination can help to achieve desired results.
+- In this chapter, I am going to discuss some of the very basic linux commands which when used in combination can help to achieve desired results.
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 
 Command: pwd
-Usage: Present Working Directory is used to know which folder the user is currently in.
+Command: Present Working Directory is used to know which folder the user is currently in.
 
 Example:
 amboresujitgopal@machine ~ % pwd
-/Users/username/Documents
+
+Output: /Users/username/Documents
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 Command: cd 
-Usage: Change Directory is used to change current working directory
+Purpose: Change Directory is used to change current working directory
 
 Example:
 amboresujitgopal@machine ~ % cd Documents
-amboresujitgopal@machine Documents % 
+
+Output: amboresujitgopal@machine Documents % 
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 Command: cd .. 
-Usage: This command enables user to go back into the previous directory
+Purpose: This command enables user to go back into the previous directory.
+
+Example:
+amboresujitgopal@machine Documents % cd ..
+
+Output: amboresujitgopal@machine ~ %
+
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 Command: ls 
@@ -30,6 +38,8 @@ Purpose: LIST is used to view content inside a folder.
 
 Example:
 username@machine Desktop % ls
+
+Output: Below folder/files are present on Deskstop
 Applications
 File1.txt
 Library
@@ -37,15 +47,16 @@ Public
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 Command: whoami
-Purpose: This command lets user name their username
+Purpose: This command displays the username of the current user when this its invoked.
 
 Example:
 username@machine Desktop % ls
-username
+
+Output: username
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 Command: clear
-Purpose: To clear out content inside the terminal/console
+Purpose: To clear-out content inside the terminal/console
 
 Example:
 username@machine Desktop % clear
@@ -94,11 +105,5 @@ Purpose: Copy command is used to copy files or group of files or directory. It c
 
 Example:
 username@machine Desktop % cp file1.txt file2.txt
-------------------------------------------------------------------------------------------------------------------------------------------
 
-
-
-
-
-
-
+Output: file2.txt will have the same content as file1.txt
