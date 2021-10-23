@@ -4,9 +4,8 @@ Summary:
 - In this chapter, I am going to discuss some of the very basic linux commands which when used in combination can help to achieve desired results.
 
 ------------------------------------------------------------------------------------------------------------------------------------------
-
 Command: pwd
-Command: Present Working Directory is used to know which folder the user is currently in.
+Purpose: Present Working Directory is used to know which folder the user is currently in.
 
 Example:
 amboresujitgopal@machine ~ % pwd
@@ -32,6 +31,24 @@ amboresujitgopal@machine Documents % cd ..
 Output: amboresujitgopal@machine ~ %
 ------------------------------------------------------------------------------------------------------------------------------------------
 
+Command: mkdir
+Purpose: mkdir command in Linux allows the user to create directories (folders).
+
+Example: amboresujitgopal@machine Document ~ % mkdir testFolder
+
+Output: A testfolder will be created under Documents folder
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Command: rmdir
+Purpose: rmdir command in Linux allows the user to delete directories (folders).
+
+Example: amboresujitgopal@machine Document ~ % rmdir testFolder
+
+Output: A testfolder will be removed under Documents folder (provided the folder is empty)
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
 Command: ls 
 Purpose: LIST is used to view content inside a folder.
 
@@ -43,6 +60,19 @@ Applications
 File1.txt
 Library
 Public
+
+------------------------------------------------------------------------------------------------------------------------------------------
+Command: ps
+Purpose: Process Status, is a command line utility that is used to display or view information related to the processes running in a Linux system.
+
+Example: amboresujitgopal@machine Document ~ % ps
+
+Output: 
+PID TTY           TIME CMD
+87150 ttys000    0:00.10 /bin/zsh -l
+66790 ttys002    0:00.12 /bin/zsh --login -i
+86576 ttys003    0:00.13 -zsh
+
 ------------------------------------------------------------------------------------------------------------------------------------------
 
 Command: whoami
