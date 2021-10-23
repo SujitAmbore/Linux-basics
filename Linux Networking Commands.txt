@@ -1,0 +1,108 @@
+Summary: In this file, I will be discussing Linux networking commands which are used extensively to inspect, analyze, maintain, and troubleshoot the network/s connected to the system.
+
+
+
+Command: ifconfig
+Purpose: Linux ifconfig stands for interface configurator. ifconfig is used to initialize an interface, configure it with an IP address, and enable or disable it. 
+
+Example: ifconfig
+
+Output: output will display IP address, MAC address and Maximum Transmission Unit
+ifconfig eth0
+ifconfig lo
+ifconfig wlan0
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command: traceroute
+Purpose: It is used to troubleshoot the network. It detects the delay and determines the pathway to your target
+
+Example: traceroute -n google.com
+Output: will contain, 1) The specified hostname 2) Size of the packets 3) The maximum number of hops required and 4) The IP address.
+
+traceroute: Warning: google.com has multiple addresses; using 74.125.24.139
+traceroute to google.com (74.125.24.139), 64 hops max, 52 byte packets
+ 1  192.168.1.254  6.186 ms  5.523 ms  4.483 ms
+ 2  42.60.35.254  6.911 ms  6.869 ms  13.786 ms
+ 3  165.21.193.18  8.409 ms  7.669 ms  7.155 ms
+ 4  165.21.193.17  9.786 ms  6.858 ms  9.152 ms
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command: ping
+Purpose: Packet INternet Groper checks for the network connectivity between two nodes.
+
+
+Example: $ ping google.com
+
+Output:
+PING google.com (74.125.24.113): 56 data bytes
+64 bytes from 74.125.24.113: icmp_seq=0 ttl=103 time=9.957 ms
+64 bytes from 74.125.24.113: icmp_seq=1 ttl=53 time=14.690 ms
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command: netstat
+Purpose: Linux netstat command refers to the network statistics. It provides statistical figures about different interfaces which include open sockets, routing tables, and connection information.
+
+Example: netstat -p
+Output:
+netstat: option requires an argument -- p
+Usage:	netstat [-AaLlnW] [-f address_family | -p protocol]
+	netstat [-gilns] [-f address_family]
+	netstat -i | -I interface [-w wait] [-abdgRtS]
+	netstat -s [-s] [-f address_family | -p protocol] [-w wait]
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command: dig
+Purpose: Domain Information Groper command is used in DNS lookup to query the DNS name server.
+
+Example: dig google.com
+Output:
+; <<>> DiG 9.10.6 <<>> google.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 57060
+;; flags: qr rd ra; QUERY: 1, ANSWER: 6, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1280
+;; QUESTION SECTION:
+;google.com.			IN	A
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command: host
+Purpose: Linux host command displays the domain name for a given IP address and IP address for a given hostname. It is also used to fetch DNS lookup for DNS related query.
+
+Example: host mindmajix
+Output:
+host mindmajix.com  
+host 149.77.21.18
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command: arp
+Purpose: Address Resolution Protocol is used to view and add content to the kernel's ARP table.
+
+Example: arp -n
+Output: 
+arp: HWADDR
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command: hostname
+Purpose: Linux hostname used to view and set the hostname of a system.
+
+Example:  sudo hostname newname
+Output:
+The hostname set through this command is not permanent. It will be reset to the name in the hostname file back when the system reboots.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
