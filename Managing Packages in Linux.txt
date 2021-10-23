@@ -1,0 +1,77 @@
+Summary: In this file, I will be discussing some of the commands used for managing packages in Linux.
+
+
+Command: apt
+Purpose: apt is a command-line utility for installing, updating, removing, and managing packages on Linux distributions. The APT package index is basically a database that holds records of available packages from the repositories enabled in your system.
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Command: apt update
+Purpose: This command will pull the latest changes from the APT repositories.
+
+Output: apt Update will install the latest repository of all packages
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Command: sudo apt install package_name
+Purpose: Many a times user does not have access to install new packages, in this scenarios "sudo" command is used to grant current user "root" super-user privilege during time of execution
+
+Output: package will be installed
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Command: sudo apt remove package_name
+Purpose: The remove command will uninstall the given packages.
+
+Output: package will be removed
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Command: sudo apt purge package_name
+Purpose: The remove command will uninstall the given packages.
+
+Output: Package will be removed including all configuration files
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Command: sudo apt list
+Purpose: The list command allows user to list the available, installed and, upgradeable packages.
+
+Output: All packages will be listed 
+Listing... Done
+adduser/now 3.118ubuntu2 all [installed,local]
+apt/now 2.0.6 amd64 [installed,local]
+base-files/now 11ubuntu5.4 amd64 [installed,local]
+base-passwd/now 3.5.47 amd64 [installed,local]
+bash/now 5.0-6ubuntu1.1 amd64 [installed,local]
+bsdutils/now 1:2.34-0.1ubuntu9.1 amd64 [installed,local]
+bzip2/now 1.0.8-2 amd64 [installed,local]
+coreutils/now 8.30-3ubuntu2 amd64 [installed,local]
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Command: sudo apt list --installed
+Purpose: The list --installed command allows user to list the installed packages.
+
+Output: All installed packages will be displayed
+Listing... Done
+adduser/now 3.118ubuntu2 all [installed,local]
+apt/now 2.0.6 amd64 [installed,local]
+base-files/now 11ubuntu5.4 amd64 [installed,local]
+base-passwd/now 3.5.47 amd64 [installed,local]
+bash/now 5.0-6ubuntu1.1 amd64 [installed,local]
+bsdutils/now 1:2.34-0.1ubuntu9.1 amd64 [installed,local]
+bzip2/now 1.0.8-2 amd64 [installed,local]
+coreutils/now 8.30-3ubuntu2 amd64 [installed,local]
+dash/now 0.5.10.2-6 amd64 [installed,local]
+debconf/now 1.5.73 all [installed,local]
+debianutils/now 4.9.1 amd64 [installed,local]
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
