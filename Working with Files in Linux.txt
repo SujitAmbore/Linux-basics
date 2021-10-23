@@ -1,5 +1,5 @@
 
-Summary: In this file, I am going to discuss some of these very userfull commands used while working with files in Linux.
+Summary: In this file, I am going to discuss some of the very userful commands used while working with files in Linux.
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------
@@ -55,10 +55,11 @@ Example:
 Delete files
 ------------------------------------------------------------------------------------------------------------------------------------------
 
+Command: rm
+Purpose: Remove command is used delete a file from working directory
 
-
-
-
+Example: username@machine Documents % rm file1.txt
+Output: file.txt will be removed from the /Documents directory
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 Search Content inside files
