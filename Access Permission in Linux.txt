@@ -1,5 +1,6 @@
 Summary:
-In this section, I will discuss some of the commands which are related to permission managment in Linux, These commands helps a user to define access-control to files.
+In this section, I will discuss some of the commands which are related to permission managment in Linux, These commands helps a user to define access-control
+to files.
 
 Command: ls -l
 Purpose: To see all the permissions to different files, above command will lists the files in the working directory in long format.
@@ -26,6 +27,21 @@ Purpose: Change Mode command is used to change the access mode of a file.
 Example: BEFORE: -rw-rw-r--  mik  mik  assgn1_client.c
 COMMAND: chmod u=r assgn1_client.c
 Output: -r--rw-r--  mik   mik   assgn1_client.c
+
+-rw-r--r-- 12 linuxize users 12.0K Apr  8 20:51 filename.txt
+|[-][-][-]-   [------] [---]
+                |       |
+                |       +-----------> Group
+                +-------------------> Owner
+                
+d|rw-|r--|r--
+[][---][---][---]
+|   |    |      |
+|   |    |      |
+|   |    |      +------------------- Other: The permissions that all the other users have over the file.
+|   |    +------------------ GROUP : The permissions that the group has over the file.
+|   +------------- User : The permissions that the owner has over the file.
++------ Directory
 
 The references are used to distinguish the users to whom the permissions apply i.e. they are list of letters that specifies whom to give permissions. The
 references are represented by one or more of the following letters:
@@ -70,4 +86,20 @@ Output: sujit
 After: sudo -u root whoami
 Output: root
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command: chown [USERNAME] [FILE]
+Purpose: The chown command allows you to change the user and/or group ownership of a given file, directory, or symbolic link
+
+Example: chown linuxize file1
+Output:
+Above command will change the ownership of a file named file1 to a new owner named linuxize
+                
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Command: chown USER:GROUP FILE
+Purpose: Will change both the owner and the group of a file use the chown command followed by the new owner and group separated by a colon (:) with no intervening spaces and the target file.
+
+Example: chown linuxize:users file1
+Output:
+Above command will change the ownership of a file named file1 to a new owner named linuxize and group users:
 
