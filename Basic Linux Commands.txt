@@ -5,7 +5,7 @@ Summary:
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 Command: pwd
-Purpose: Present Working Directory is used to know which folder the user is currently in.
+Purpose: Print Working Directory is used to know which folder the user is currently in.
 
 Example:
 amboresujitgopal@machine ~ % pwd
@@ -89,7 +89,7 @@ Purpose: To clear-out content inside the terminal/console
 
 Example:
 username@machine Desktop % clear
-----------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------
 
 Command: rm
 Purpose: REMOVE command is used to remove a file inside folder/directory
@@ -98,4 +98,13 @@ Example:
 username@machine Desktop % rm file1.txt
 
 Output: file1.txt will be removed from the Desktop
+------------------------------------------------------------------------------------------------------------------------------------------
 
+Command: rm -rf
+Purpose: To delete a directory and everything in it, you can pass the -rf flag to rm. -f will remove the files without confirmation, and -r will remove files inside the directory. 
+
+Example:
+username@machine Desktop % rm -rf /TestFolder
+Output: 
+All files under TestFolder will be removed/deleted
+------------------------------------------------------------------------------------------------------------------------------------------
