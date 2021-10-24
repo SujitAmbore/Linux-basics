@@ -1,0 +1,43 @@
+Summary: In this file, I will be discussing some of the commands used for monitoring and checking the system resources in Linux.
+
+
+Command: top
+Purpose: The top command presents you with lots of information about all the different processes (essentially, applications) running on your machine, including memory consumption and CPU utilization. This command is useful for identifying rogue processes that are consuming too many resources, or processes that should not be running, but are.
+
+Example:
+Output:
+--------------------------------------------------------------------------------------------------------------------------------
+
+Command: free
+Purpose: The free command allows you to see current memory usage on a machine. This is useful for checking that a machine has enough memory to do what you require of it, for example, running a batch process that consumes several GB of memory.
+
+Example:
+Output:
+ total        used        free      shared  buff/cache   available
+Mem:        2033396      718460      435616      311436      879320      867096
+Swap:       1048572      148064      900508
+--------------------------------------------------------------------------------------------------------------------------------
+
+Command: df
+Purpose: This command shows disk usage on your machine in a human readable format (megabytes and gigabytes rather than bytes). You can see at a glance which of your disks is reaching close to 100% used, and free up space if necessary.
+
+Example: df -h
+Output:
+Filesystem      Size  Used Avail Use% Mounted on
+overlay          59G   12G   44G  21% /
+tmpfs            64M     0   64M   0% /dev
+tmpfs           993M     0  993M   0% /sys/fs/cgroup
+--------------------------------------------------------------------------------------------------------------------------------
+
+Command: aux
+Purpose: The aux options tell ps to show processes owned by all users. This is a useful diagnostic tool when you think a process might be running when it shouldn’t be, or that it might be consuming too many resource
+
+Example: ps aux
+Output:
+USER               PID  %CPU %MEM      VSZ    RSS   TT  STAT STARTED      TIME COMMAND
+_coreaudiod        193  16.4  0.1  4463476  16700   ??  Rs   12Oct21 469:04.41 /usr/sbin/coreaudiod
+amboresujitgopal 41149   9.7  0.3  5670044  55228   ??  S    Tue10AM 318:55.78 /Applications/zoom.us.app/Content
+amboresujitgopal 87132   7.2  0.7 53245972 120688   ??  S     9:54PM   9:46.67 /Applications/Visual Studio Code.
+_windowserver      135   5.2  0.5  8190196  89528   ??  Ss   12Oct21 941:36.05 /System/Library/PrivateFrameworks
+
+--------------------------------------------------------------------------------------------------------------------------------
