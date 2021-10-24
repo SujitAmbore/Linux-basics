@@ -46,10 +46,12 @@ Output: file2.txt will have the same content as file1.txt
 ------------------------------------------------------------------------------------------------------------------------------------------
 Edit File
 ------------------------------------------------------------------------------------------------------------------------------------------
-Command: nano file.txt
-Purpose:
+Command: nano
+Purpose: nano is an easy to use command line text editor for Linux operating systems
 
-Example:
+Example: nano file1.txt
+Output: 
+Hello Word
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 Delete files
