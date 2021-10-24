@@ -1,0 +1,30 @@
+Summary: In this file, I will be discussing some of the commands used for monitoring and checking the system resources in Linux.
+
+
+Command: top
+Purpose: The top command presents you with lots of information about all the different processes (essentially, applications) running on your machine, including memory consumption and CPU utilization. This command is useful for identifying rogue processes that are consuming too many resources, or processes that should not be running, but are
+
+Example:
+Output:
+--------------------------------------------------------------------------------------------------------------------------------
+
+Command:
+Purpose:
+
+Example:
+Output:
+--------------------------------------------------------------------------------------------------------------------------------
+
+Command:
+Purpose:
+
+Example:
+Output:
+--------------------------------------------------------------------------------------------------------------------------------
+
+Command:
+Purpose:
+
+Example:
+Output:
+--------------------------------------------------------------------------------------------------------------------------------
