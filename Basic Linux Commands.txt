@@ -8,7 +8,7 @@ Command: pwd
 Purpose: Print Working Directory is used to know which folder the user is currently in.
 
 Example:
-amboresujitgopal@machine ~ % pwd
+username@machine ~ % pwd
 
 Output: /Users/username/Documents
 ------------------------------------------------------------------------------------------------------------------------------------------
@@ -17,24 +17,24 @@ Command: cd
 Purpose: Change Directory is used to change current working directory
 
 Example:
-amboresujitgopal@machine ~ % cd Documents
+username@machine ~ % cd Documents
 
-Output: amboresujitgopal@machine Documents % 
+Output: username@machine Documents % 
 ------------------------------------------------------------------------------------------------------------------------------------------
 
 Command: cd .. 
 Purpose: This command enables user to go back into the previous directory.
 
 Example:
-amboresujitgopal@machine Documents % cd ..
+username@machine Documents % cd ..
 
-Output: amboresujitgopal@machine ~ %
+Output: username@machine ~ %
 ------------------------------------------------------------------------------------------------------------------------------------------
 
 Command: mkdir
 Purpose: mkdir command in Linux allows the user to create directories (folders).
 
-Example: amboresujitgopal@machine Document ~ % mkdir testFolder
+Example: username@machine Document ~ % mkdir testFolder
 
 Output: A testfolder will be created under Documents folder
 
@@ -43,7 +43,7 @@ Output: A testfolder will be created under Documents folder
 Command: rmdir
 Purpose: rmdir command in Linux allows the user to delete directories (folders).
 
-Example: amboresujitgopal@machine Document ~ % rmdir testFolder
+Example: username@machine Document ~ % rmdir testFolder
 
 Output: A testfolder will be removed under Documents folder (provided the folder is empty)
 
@@ -65,7 +65,7 @@ Public
 Command: ps
 Purpose: Process Status, is a command line utility that is used to display or view information related to the processes running in a Linux system.
 
-Example: amboresujitgopal@machine Document ~ % ps
+Example: username@machine Document ~ % ps
 
 Output: 
 PID TTY           TIME CMD
